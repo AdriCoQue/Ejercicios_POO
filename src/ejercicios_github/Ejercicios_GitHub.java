@@ -7,7 +7,7 @@ public class Ejercicios_GitHub {
 
     public static void main(String[] args) {
         String nombre, inicial="";
-        nombre = JOptionPane.showInputDialog("Ingresa tu nombre completo");;
+        nombre = JOptionPane.showInputDialog("Ingresa tu nombre completo");
         JOptionPane.showMessageDialog(null, "Hola " + nombre, "Hola", JOptionPane.INFORMATION_MESSAGE);
         String []  iniciales = nombre.split(" ");
         for (String iniciale : iniciales) {
