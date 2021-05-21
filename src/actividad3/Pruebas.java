@@ -17,18 +17,18 @@ public class Pruebas {
         
         switch(opcion){
             case 0:
-                base = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la base del Rectangulo"));
-                altura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la altura del Rectangulo"));
+                base = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la base del rectangulo"));
+                altura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la altura del rectangulo"));
                 Rectangulo rectangulo = new Rectangulo(base, altura);
-                JOptionPane.showMessageDialog(null, "Perimetro: " + rectangulo.calcularPerimetro()
-                       + "\nÁrea: " + rectangulo.calcularArea(), "Resultados", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Base: " + rectangulo.getBase() + "\nAltura: " + rectangulo.getAltura() +
+                        "\nPerimetro: " + rectangulo.calcularPerimetro() + "\nÁrea: " + rectangulo.calcularArea(), "Datos del rectangulo", JOptionPane.INFORMATION_MESSAGE);
                 break;
              
             case 1:
                 radio = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el radio del circulo"));
                 Circulo circulo = new Circulo(radio);
-                JOptionPane.showMessageDialog(null, "Perimetro: " + circulo.calcularPerimetro()
-                       + "\nÁrea: " + circulo.calcularArea(), "Resultados", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null,"Radio: " + circulo.getRadio() + "\nPerimetro: " + circulo.calcularPerimetro()
+                       + "\nÁrea: " + circulo.calcularArea(), "Datos del circulo", JOptionPane.INFORMATION_MESSAGE);
                 break;
                 
             case 2:
