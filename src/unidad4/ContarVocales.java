@@ -49,13 +49,15 @@ public class ContarVocales {
         
         JTextArea textArea = new JTextArea("");
         
-        textArea.append("Vocal\tVeces\n");
-        textArea.append("***************\n");
+        textArea.append("Vocal\tVeces\n");       
+        textArea.append("------------------------------\n");
         textArea.append("a\t" + vocales[0] + "\n");
         textArea.append("e\t" + vocales[1] + "\n");
         textArea.append("i\t" + vocales[2] + "\n");
         textArea.append("o\t" + vocales[3] + "\n");
         textArea.append("u\t" + vocales[4] + "\n");
+        
+        JOptionPane.showMessageDialog(null, textArea, "Apariciones de vocales", JOptionPane.INFORMATION_MESSAGE);
       
     }
     
