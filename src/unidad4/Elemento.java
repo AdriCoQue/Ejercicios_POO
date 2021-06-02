@@ -12,6 +12,8 @@ public class Elemento {
     public Elemento(String leTitulo, int tiempo){
         this.titulo = leTitulo;
         this.duracion = tiempo;
+        comentario = "";
+        loTengo = false;
     }
     
     public String toString(){
