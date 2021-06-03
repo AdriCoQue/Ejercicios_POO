@@ -18,7 +18,8 @@ public class CD extends Elemento{
     public String toString(){
         String aux = super.toString();
         aux += "Intérprete (CD): " + interprete;
-        aux += "Número de pistas: " + noDePistas;
+        aux += ", Número de pistas: " + noDePistas;
+        aux += "\n";
         return aux;
     }
             

@@ -13,7 +13,6 @@ public class BaseDeDatos {
     
     public BaseDeDatos(){
         elementos = new ArrayList<Elemento>();
-        elementos.add(elElemento);
     }
     
     //Cadena con todos los elementos
@@ -23,5 +22,8 @@ public class BaseDeDatos {
         return auxStr;
     }
     
+    public void agregarElemento(Elemento elElemento){
+        elementos.add(elElemento);
+    }
     
 }
