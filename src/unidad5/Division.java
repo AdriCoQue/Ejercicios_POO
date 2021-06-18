@@ -16,8 +16,8 @@ public class Division {
         String str1 = "100";
         String str2 = "0";
         String respuesta = "";
-        double num;
-        double den;
+        int num;
+        int den;
         double cociente;
         InputStreamReader s = new InputStreamReader(System.in);
         BufferedReader stdin = new BufferedReader(s);
@@ -26,9 +26,9 @@ public class Division {
         try{
             System.out.println("Escriba dos números para realizar una división");
             System.out.println("Ingrese el numerador");
-            num = Double.parseDouble(stdin.readLine());
+            num = Integer.parseInt(stdin.readLine());
             System.out.println("Ingrese el denominador");
-            den = Double.parseDouble(stdin.readLine());
+            den = Integer.parseInt(stdin.readLine());
             cociente = calcular(str1, str2, num, den);
             respuesta = String.valueOf(cociente);
         }catch(NumberFormatException nex){
@@ -44,7 +44,7 @@ public class Division {
         System.out.println("Resultado: " + respuesta);
         
     }
-    public static double calcular(String str1, String str2, double num, double den) throws IntervaloException, NumberFormatException, ArithmeticException{
+    public static double calcular(String str1, String str2, int num, int den) throws IntervaloException, NumberFormatException, ArithmeticException{
         int limSup = Integer.parseInt(str1);
         int limInf = Integer.parseInt(str2);
         if(num<=limSup && num>=limInf && den<=limSup && den>=limInf){
